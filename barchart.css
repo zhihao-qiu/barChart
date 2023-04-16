@@ -1,0 +1,234 @@
+.grid-chart-area {
+  display: grid;
+  padding: 20px;
+  grid-row-gap: 0px;
+  grid-column-gap: 30px;
+  grid-template-rows: repeat(100, 0.7vh) auto;
+  z-index: 0;
+  position: relative;
+}
+
+.grid-data {
+  background: #0AF;
+  margin: 0 10px;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  /* align-items: center; */
+  /* align-items: end; */
+}
+
+.grid-data-label-container {
+  margin: 5px 0;
+  padding: 2px 16px;
+  border-radius: 20px;
+  color: #222;
+  background: rgba(255,255,255,0.2);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.grid-data-value-label {
+  font-size: 0.8em;
+}
+.grid-data-description {
+  font-size: 0.7em;
+}
+
+.grid-label-x {
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid-line {
+  border-top: 1px solid rgba(0,0,0,0.5);
+  background-color: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.grid-axis-y {
+  border-right: 1px solid rgba(0,0,0,0.5);
+}
+
+.grid-label-y {
+  line-height: 0;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  width: 20px;
+}
+
+.grid-title {
+  font-size: 24px;
+  text-align: center;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+}
+
+.option{
+  background-color: #f3e9df;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: auto;
+  width: 80vw;
+  display:none;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.optionBar{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.button{
+  background: rgba(139, 137, 197, 0.692);
+  border-radius: 10px;
+  padding: 10px;
+  color:rgb(255, 246, 246);
+  text-shadow: 3px 3px 10px rgba(41, 40, 40, 0.63);
+  box-shadow: 3px 3px rgba(150, 74, 74, 0.349);
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 10px 10px 10px;
+  width: 200px;
+  cursor: pointer;
+}
+
+#samples-container {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+.section-info, .section-chart {
+  align-items: center;
+  justify-items: center;
+  /* border: 1px solid red; */
+}
+
+.section-chart {
+  padding-top: 3em;
+}
+
+
+#choiceWindow {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 55%;
+  padding: 20px;
+  border: 3px solid #ccc;
+  background-color: white;
+  z-index:2;
+  overflow: auto;
+}
+#backGround {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 1100px;
+  background-color: black;
+  z-index:1;
+  -moz-opacity: 0.8;
+  opacity:.80;
+  filter: alpha(opacity=88);
+}
+#x:hover {cursor: pointer;color: rgb(55,198,192);}
+
+
+.list-container {
+  display: table;
+  width: 100%;
+  border: 1px solid #222;
+}
+
+.table-header {
+  display: table-row;
+  border: 1px solid #222;
+  text-align: center;
+  font-size: large;
+  background-color: burlywood;
+}
+
+.table-button {
+  display: table;
+  border: 1px solid #222;
+  text-align: center;
+  font-size: large;
+  background-color: burlywood;
+}
+
+.table-row {
+  display: table-row;
+  border: 1px solid #222;
+}
+
+.table-item {
+  display: table-cell;
+  border: 1px solid #222;
+}
+
+.table-item-delete, .table-item-add {
+  display: table-cell;
+  border: 1px solid #222;
+  margin: auto;
+  vertical-align: middle;
+}
+/***
+#list-header {
+  border: 1px solid #f0f0f0;
+  height: auto;
+  font-size: 14px;
+  text-align: left;
+  line-height: auto;
+}
+
+#list-body {
+  border: 1px solid #f0f0f0;
+  height: 50px;
+  text-align: left;
+  line-height: auto;
+}
+***/
+
+.deletebtn {
+  background-color: black;
+  color: white;
+  display: block;
+  height: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  width: 80px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  font-size: small;
+}
+
+.addbtn {
+  background-color: black;
+  color: white;
+  display: block;
+  height: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  width: 80px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  font-size: small;
+}
